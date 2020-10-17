@@ -1,0 +1,48 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+      },
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "prettier/@typescript-eslint"
+    ],
+    "root": true,
+    "env": {
+        "node": true,
+        "jest": true
+    },
+    "rules": {
+      "semi": "off",
+      "linebreak-style": 0,
+      "quotes": [2, "single", { "avoidEscape": true }],
+      "import/no-cycle": [0, { "ignoreExternal": true }],
+      "@typescript-eslint/semi": [2, "never"],
+      "@typescript-eslint/explicit-functin-return-type": 0,
+      "@typescript-eslint/explicit-member-accessibility": 0,
+      "@typescript-eslint/member-delimiter-style": 0,
+      "@typescript-eslint/no-explicit-any": 0,
+      "@typescript-eslint/no-var-requires": 0,
+      "@typescript-eslint/no-use-before-define": 0,
+      "class-methods-use-this": "off",
+      "import/prefer-default-export": 0,
+      "@typescript-eslint/naming-convention": 0,
+      "@typescript-eslint/no-unused-vars": [
+        2,
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "no-console": [
+        2,
+        {
+          "allow": ["warn", "error"]
+        }
+      ]
+    }
+  }
+  
